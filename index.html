@@ -12,7 +12,8 @@
         background-size: cover;
         background-position: center;
         font-family: Arial, sans-serif;
-        height: 100vh; /* 确保整个页面都被背景填满 */
+        height: auto; /* 设置高度为自动，以便内容能够延伸到下方 */
+        overflow-y: auto; /* 设置垂直方向上的溢出滚动 */
         position: relative; /* 添加相对定位以便在其中定位绝对定位元素 */
     }
 
@@ -73,6 +74,9 @@
         window.location.href = "https://example.com"; // 替换为你想要重定向的页面URL
     }
 </script>
+
+<!-- 添加一些内容，使页面能够滚动 -->
+<div style="height: 2000px;"></div>
 
 </body>
 </html>
