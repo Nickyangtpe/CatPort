@@ -59,12 +59,31 @@
         background-color: rgba(0, 0, 0, 0.5); /* 设置半透明黑色 */
     }
 
-    #overlay::before {
-        left: 20%;
+    /* 添加样式以在黑色区块上方显示圆角方框 */
+    .info-box {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px;
+        color: black;
     }
 
-    #overlay::after {
-        left: 50%;
+    #box1 {
+        top: 10%; /* 调整方框1的垂直位置 */
+        left: 10%; /* 调整方框1的水平位置 */
+    }
+
+    #box2 {
+        top: 10%; /* 调整方框2的垂直位置 */
+        left: 40%; /* 调整方框2的水平位置 */
+    }
+
+    #box3 {
+        top: 10%; /* 调整方框3的垂直位置 */
+        left: 70%; /* 调整方框3的水平位置 */
     }
 
 </style>
@@ -76,6 +95,25 @@
 <button id="button" onclick="redirectToPage()">DownLoad</button>
 
 <div id="overlay"></div> <!-- 添加半透明黑色区块 -->
+
+<!-- 添加圆角方框 -->
+<div class="info-box" id="box1">
+    <h2>功能1</h2>
+    <img src="https://via.placeholder.com/50" alt="图标">
+    <p>功能1的说明文字</p>
+</div>
+
+<div class="info-box" id="box2">
+    <h2>功能2</h2>
+    <img src="https://via.placeholder.com/50" alt="图标">
+    <p>功能2的说明文字</p>
+</div>
+
+<div class="info-box" id="box3">
+    <h2>功能3</h2>
+    <img src="https://via.placeholder.com/50" alt="图标">
+    <p>功能3的说明文字</p>
+</div>
 
 <script>
     function redirectToPage() {
