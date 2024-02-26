@@ -37,7 +37,7 @@
     }
 
     /* 添加样式以在按钮上方和下方显示额外文本 */
-    #title-text {
+    #title-text{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -45,17 +45,8 @@
         font-size: 50px;
     }
 
-    @media (min-width: 768px) {
-        #title-text {
-            font-size: 25px;
-            top: calc(50% - 58px); /* 将文本放置在按钮上方 */
-        }
-    }
-
-    @media (max-width: 767px) {
-        #title-text {
-            top: calc(55% - 58px); /* 将文本放置在按钮上方 */
-        }
+    #title-text {
+        top: calc(53% - 58px); /* 将文本放置在按钮上方 */
     }
 </style>
 </head>
