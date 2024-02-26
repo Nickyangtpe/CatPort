@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>背景圖片和按鈕</title>
+<title>CatPort</title>
 <style>
     body {
         margin: 0;
@@ -18,7 +18,7 @@
 
     #button {
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: blue;
@@ -37,7 +37,7 @@
     }
 
     /* 添加样式以在按钮上方和下方显示额外文本 */
-    #above-text{
+    #title-text{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -45,14 +45,14 @@
         font-size: 50px;
     }
 
-    #above-text {
-        top: calc(50% - 60px); /* 将文本放置在按钮上方 */
+    #title-text {
+        top: calc(50% - 50px); /* 将文本放置在按钮上方 */
     }
 </style>
 </head>
 <body>
 
-<div id="above-text">Above the Button Text</div>
+<div id="title-text">Download CatPort</div>
 
 <button id="button">DownLoad</button>
 
