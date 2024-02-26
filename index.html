@@ -48,6 +48,15 @@
     #title-text {
         top: calc(55% - 58px); /* 将文本放置在按钮上方 */
     }
+
+    /* 添加样式以创建半透明的黑色区块 */
+    #overlay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 30%; /* 调整高度以控制黑色区块的大小 */
+        background-color: rgba(0, 0, 0, 0.5); /* 设置半透明黑色 */
+    }
 </style>
 </head>
 <body>
@@ -56,10 +65,12 @@
 
 <button id="button" onclick="redirectToPage()">DownLoad</button>
 
+<div id="overlay"></div> <!-- 添加半透明黑色区块 -->
+
 <script>
     function redirectToPage() {
         // 重定向到指定页面
-        window.location.href = "https://github.com/Nickyangtpe/CatPort/releases/download/Launcher%E7%99%BC%E5%B8%83/CartPort-Launcher.exe"; // 替换为你想要重定向的页面URL
+        window.location.href = "https://example.com"; // 替换为你想要重定向的页面URL
     }
 </script>
 
