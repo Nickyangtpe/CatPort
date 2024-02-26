@@ -46,7 +46,7 @@
     }
 
     #title-text {
-        top: calc(53% - 58px); /* 将文本放置在按钮上方 */
+        top: calc(55% - 58px); /* 将文本放置在按钮上方 */
     }
 </style>
 </head>
@@ -54,7 +54,14 @@
 
 <div id="title-text">Download CatPort</div>
 
-<button id="button">DownLoad</button>
+<button id="button" onclick="redirectToPage()">DownLoad</button>
+
+<script>
+    function redirectToPage() {
+        // 重定向到指定页面
+        window.location.href = "https://github.com/Nickyangtpe/CatPort/releases/download/Launcher%E7%99%BC%E5%B8%83/CartPort-Launcher.exe"; // 替换为你想要重定向的页面URL
+    }
+</script>
 
 </body>
 </html>
