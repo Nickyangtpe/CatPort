@@ -58,6 +58,27 @@
         height: 55%; /* 增加高度为35% */
         background-color: rgba(0, 0, 0, 0.5); /* 设置半透明黑色 */
     }
+
+    /* 在黑色区块上方放置三个圆角矩形 */
+    #overlay::before,
+    #overlay::after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 20px;
+        background-color: white;
+        border-radius: 10px;
+        top: -10px;
+    }
+
+    #overlay::before {
+        left: 20%;
+    }
+
+    #overlay::after {
+        left: 50%;
+    }
+
 </style>
 </head>
 <body>
