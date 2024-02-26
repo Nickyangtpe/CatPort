@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>背景圖片和按鈕</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to bottom right, rgb(0, 17, 255), rgb(255, 0, 81)); /* 设置渐变色 */
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+        height: 100vh; /* 确保整个页面都被背景填满 */
+        position: relative; /* 添加相对定位以便在其中定位绝对定位元素 */
+    }
+
+    #button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: blue;
+        color: white;
+        padding: 10px 75px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s, background-color 0.3s, font-size 0.3s;
+    }
+
+    #button:hover {
+        background-color: rgb(89, 0, 255);
+        font-size: 110%;
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+
+    /* 添加样式以在按钮上方和下方显示额外文本 */
+    #above-text{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 50px;
+    }
+
+    #above-text {
+        top: calc(50% - 60px); /* 将文本放置在按钮上方 */
+    }
+</style>
+</head>
+<body>
+
+<div id="above-text">Above the Button Text</div>
+
+<button id="button">DownLoad</button>
+
+</body>
+</html>
