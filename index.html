@@ -125,11 +125,70 @@
         color: white;
         text-align: center;
         padding: 10px 0;
+    }#navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        padding: 10px 0;
+        text-align: center;
     }
 
+    #navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+    }
+
+    #navbar a:hover {
+        text-decoration: underline;
+    }
+
+    /* Additional CSS styles for the dropdown menu */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 </style>
 </head>
 <body>
+
+<!-- Navigation bar -->
+<div id="navbar">
+    <a href="#">首頁</a>
+    <a href="https://github.com/Nickyangtpe/CatPort/tree/main">GitHub</a>
+    <div class="dropdown">
+        <span>下載</span>
+        <div class="dropdown-content">
+            <a href="https://github.com/Nickyangtpe/CatPort/releases/download/Launcher%E7%99%BC%E5%B8%83/CartPort-Launcher.exe">程式下載</a>
+            <a href="#">其他</a>
+        </div>
+    </div>
+</div>
 
 <div id="title-text">下載CatPort</div>
 
