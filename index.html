@@ -162,15 +162,24 @@
         window.location.href = "https://github.com/Nickyangtpe/CatPort/tree/main"; // 替换为你想要重定向的页面URL
     }
     // 檢查瀏覽器是否支援 HTML5
-if (!("querySelector" in document && "localStorage" in window && "addEventListener" in window)) {
-    // 如果不支援，顯示一個對話框
-    var dialog = document.getElementById("unsupported-browser-dialog");
-    dialog.style.display = "block";
-}
+// 檢查瀏覽器是否支援 HTML5
+    function checkBrowserSupport() {
+        var unsupportedBrowserDialog = document.getElementById("unsupported-browser-dialog");
+        unsupportedBrowserDialog.style.display = "block";
+    }
+
+    // 檢查瀏覽器支援性
+    var isHtml5Supported = !!document.createElement('canvas').getContext;
+    if (!isHtml5Supported) {
+        checkBrowserSupport();
+    }
 </script>
 
+<!-- 添加封底 -->
+<div id="footer">
+    <p>© 2024 CatPort. All Rights Reserved.</p>
+</div>
 <!-- 添加一些内容，使页面能够滚动 -->
 <div style="height: 1350px;"></div>
-
 </body>
 </html>
