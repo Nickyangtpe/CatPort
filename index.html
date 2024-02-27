@@ -36,6 +36,24 @@
         font-size: 110%;
         transform: translate(-50%, -50%) scale(1.05);
     }
+    #button2 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        color: white;
+        padding: 10px 75px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s, background-color 0.3s, font-size 0.3s;
+    }
+
+    #button2:hover {
+        font-size: 110%;
+        transform: translate(-50%, -50%) scale(1.05);
+    }
 
     /* 添加样式以在按钮上方和下方显示额外文本 */
     #title-text{
@@ -87,10 +105,12 @@
 </head>
 <body>
 
-<div id="title-text">CatPort</div>
+<div id="title-text">Download CatPort</div>
 
 <button id="button" onclick="redirectToPage()">下載</button>
 
+<button id="button2" onclick="redirectToPage2()">Github</button>
+    
 <div id="overlay"></div> <!-- 添加半透明黑色区块 -->
 <div class="info-box" id="box1">
     <h2>簡單</h2>
@@ -114,6 +134,10 @@
     function redirectToPage() {
         // 重定向到指定页面
         window.location.href = "https://github.com/Nickyangtpe/CatPort/releases/download/Launcher%E7%99%BC%E5%B8%83/CartPort-Launcher.exe"; // 替换为你想要重定向的页面URL
+    }
+    function redirectToPage2() {
+        // 重定向到指定页面
+        window.location.href = "https://github.com/Nickyangtpe/CatPort/tree/main"; // 替换为你想要重定向的页面URL
     }
 </script>
 
